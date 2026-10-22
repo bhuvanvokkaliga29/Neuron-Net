@@ -473,13 +473,14 @@ body {
   -webkit-backdrop-filter: blur(14px);
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: var(--radius-subcard);
-  padding: 14px 24px;
+  padding: 16px 24px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 10px;
   margin: 0 auto 36px;
-  max-width: 860px;
-  text-align: left;
+  max-width: 820px;
+  text-align: center;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
@@ -487,21 +488,25 @@ body {
   background-color: var(--color-lake-blue);
   color: #ffffff;
   border-radius: var(--radius-tag);
-  padding: 4px 12px;
+  padding: 4px 14px;
   font-family: var(--font-mono);
   font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   white-space: nowrap;
+  display: inline-block;
+  margin: 0 auto;
 }
 
 .roadmap-text {
   font-family: var(--font-mono);
   font-size: 12.5px;
   color: #111111;
-  line-height: 1.45;
+  line-height: 1.5;
   font-weight: 500;
+  text-align: center;
+  margin: 0;
 }
 
 .roadmap-text strong {
@@ -1222,20 +1227,24 @@ body {
 
   .future-roadmap-card {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
     gap: 10px;
-    padding: 14px 16px;
+    padding: 14px 18px;
     border-radius: var(--radius-subcard);
-    margin-bottom: 20px;
+    margin-bottom: 22px;
   }
 
   .roadmap-tag {
     font-size: 10px;
-    padding: 3px 10px;
+    padding: 3px 12px;
+    margin: 0 auto;
   }
 
   .roadmap-text {
     font-size: 12px;
+    text-align: center;
+    line-height: 1.45;
   }
 
   .hero-headline {
