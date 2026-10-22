@@ -815,7 +815,7 @@ body {
 /* Expansive Responsive Grid — 3 to 4 cards on desktop, 2 on tablet, 1 on mobile */
 .resource-cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: var(--spacing-24);
   margin-bottom: var(--spacing-56);
   width: 100%;
@@ -828,12 +828,13 @@ body {
   -webkit-backdrop-filter: blur(14px);
   border: 1px solid var(--color-ash);
   border-radius: var(--radius-card);
-  padding: var(--spacing-32);
+  padding: 22px 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s ease, box-shadow 0.25s ease;
   position: relative;
+  overflow: hidden;
 }
 
 .feature-card:hover {
@@ -856,6 +857,9 @@ body {
   justify-content: space-between;
   margin-bottom: var(--spacing-16);
   gap: 8px;
+  flex-wrap: wrap;
+  row-gap: 6px;
+  width: 100%;
 }
 
 .card-badge-drive {
@@ -863,9 +867,9 @@ body {
   color: var(--color-lake-blue);
   border: 1px solid #c3d7f9;
   border-radius: var(--radius-tag);
-  padding: 3.5px 10px;
+  padding: 3px 8px;
   font-family: var(--font-mono);
-  font-size: 10.5px;
+  font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 0.3px;
   font-weight: 600;
@@ -881,9 +885,9 @@ body {
   color: var(--color-graphite);
   border: 1px solid var(--color-ash);
   border-radius: var(--radius-tag);
-  padding: 3.5px 10px;
+  padding: 3px 8px;
   font-family: var(--font-mono);
-  font-size: 10.5px;
+  font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 0.3px;
   font-weight: 600;
@@ -893,12 +897,13 @@ body {
 
 .card-scheme-pill {
   font-family: var(--font-mono);
-  font-size: 10.5px;
+  font-size: 10px;
   text-transform: uppercase;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.2px;
   color: var(--color-smoke);
   white-space: nowrap;
   flex-shrink: 0;
+  margin-left: auto;
 }
 
 .card-title {
