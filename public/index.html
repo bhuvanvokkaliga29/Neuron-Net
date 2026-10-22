@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>NEURON NET — Academic Resource Platform | CSE (AI & ML), AMC Engineering College</title>
+  <meta name="description" content="Centralized academic resource platform maintained by NEURON NET Academic Club, Department of Computer Science & Engineering (Artificial Intelligence & Machine Learning), AMC Engineering College, Bengaluru.">
+  <meta name="keywords" content="AMC Engineering College, CSE AIML, NEURON NET, Autonomous Scheme, VTU Scheme, Engineering Notes, VTU Circle, Syllabus, Question Papers">
+
+  <!-- Typography: Monad Editorial Tech Aesthetics -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" type="image/jpeg" href="/assets/logos/neuron-net-club-logo.jpg">
+</head>
+<body>
+
+  <!-- Crisp AMC Campus Background Layer (Fits Mobile & Web Screen) -->
+  <div class="amc-campus-backdrop" aria-hidden="true"></div>
+
+  <!-- Soft Decorative Atmospheric Wash -->
+  <div class="gradient-atmosphere" aria-hidden="true">
+    <div class="gradient-blob blob-1"></div>
+    <div class="gradient-blob blob-2"></div>
+    <div class="gradient-blob blob-3"></div>
+  </div>
+
+  <!-- Announcement Bar -->
+  <aside class="announcement-bar" id="announcement-bar" role="region" aria-label="Official Academic Announcement">
+    <div class="announcement-text">
+      <span class="announcement-badge">Official Portal</span>
+      <span>Autonomous &amp; VTU Semester Google Drive Repositories are now live for CSE (AI &amp; ML) students.</span>
+    </div>
+    <div class="announcement-actions">
+      <a href="#official-drive-section" class="announcement-pill">Browse Materials ▸</a>
+      <button class="announcement-close" id="announcement-close" aria-label="Dismiss Announcement">✕</button>
+    </div>
+  </aside>
+
+  <!-- Sticky Full-Width Header -->
+  <header class="site-header">
+    <div class="content-wrapper">
+      <nav class="nav-container" aria-label="Main Navigation">
+        
+        <!-- Brand Hierarchy & 3 Official Logos -->
+        <a href="/" class="brand-lockup-container" title="NEURON NET Academic Platform">
+          <div class="brand-logos-row">
+            <!-- 1. AMC Engineering College Official Logo -->
+            <div class="logo-item" title="AMC Engineering College (Autonomous)">
+              <img src="/assets/logos/amc-college-logo.jpg" 
+                   alt="AMC Engineering College (Autonomous) NAAC A+ NBA Accredited" 
+                   height="44">
+            </div>
+            <div class="logo-separator" aria-hidden="true"></div>
+            
+            <!-- 2. Department of CSE (AI & ML) Official Shield Logo -->
+            <div class="logo-item" title="Dept. of CSE (Artificial Intelligence &amp; Machine Learning)">
+              <img src="/assets/logos/cse-aiml-dept-logo.jpg" 
+                   alt="Dept. of Computer Science and Engineering CSAI" 
+                   height="44">
+            </div>
+            <div class="logo-separator" aria-hidden="true"></div>
+
+            <!-- 3. NEURON NET Academic Club Official Logo -->
+            <div class="logo-item" title="NEURON NET Academic Club">
+              <img src="/assets/logos/neuron-net-club-logo.jpg" 
+                   alt="NEURON NET Academic Club Logo" 
+                   height="44">
+            </div>
+          </div>
+
+          <div class="brand-text-block">
+            <span class="brand-club-title">NEURON NET</span>
+            <span class="brand-subtext">Dept. of CSE (AI &amp; ML) • AMC Engineering College</span>
+          </div>
+        </a>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+          <li><a href="#official-drive-section" class="nav-link">Club Drive Folders</a></li>
+          <li><a href="#external-section" class="nav-link">VTU Circle &amp; Syllabus</a></li>
+          <li><a href="#faq-section" class="nav-link">Academic FAQ</a></li>
+        </ul>
+
+        <!-- Action CTA -->
+        <div class="nav-actions">
+          <a href="#official-drive-section" class="btn-pill-blue nav-cta-btn">
+            Access Drive Folders ▸
+          </a>
+        </div>
+
+      </nav>
+    </div>
+  </header>
+
+  <main class="content-wrapper">
+
+    <!-- Hero Section (Clean Premium Editorial Format Matching Design) -->
+    <section class="hero-section" aria-labelledby="hero-title">
+      
+      <!-- Verified Tag -->
+      <div class="hero-header-badges">
+        <div class="hero-meta-tag">
+          <span class="status-dot"></span>
+          <span>Academic Year 2025–2026 • Verified Repositories</span>
+        </div>
+      </div>
+
+      <!-- Roadmap Banner -->
+      <div class="future-roadmap-card" role="status">
+        <span class="roadmap-tag">Phase 1 Launch</span>
+        <p class="roadmap-text">
+          <strong>This is just the beginning.</strong> In-platform interactive calculation suites, subject-level syllabus indexing, faculty notes archives, and advanced study utilities are actively in development and coming soon.
+        </p>
+      </div>
+
+      <h1 class="hero-headline" id="hero-title">
+        The Central Academic Repository for<br>
+        <em>Artificial Intelligence &amp; Machine Learning</em>
+      </h1>
+
+      <p class="hero-subtext">
+        Maintained by the <strong>NEURON NET Academic Club</strong>. Explore semester-wise Google Drive study materials, official autonomous and VTU syllabus copies, previous-year question papers, and academic calculation utilities in one unified, distraction-free environment.
+      </p>
+
+      <div class="hero-button-group">
+        <a href="#official-drive-section" class="btn-pill-blue">
+          Explore Official Drive Folders ▸
+        </a>
+        <a href="#search-section" class="btn-pill-ghost">
+          Search Curriculum Materials
+        </a>
+      </div>
+
+    </section>
+
+    <!-- Scheme Pipeline Selector -->
+    <section class="pipeline-section" aria-label="Academic Scheme Navigation">
+      <div class="pipeline-header">
+        <span class="section-label-mono">Select Curriculum Scheme</span>
+        <span class="section-label-mono" id="total-badge-count">16 Resources Active</span>
+      </div>
+
+      <div class="pipeline-nodes-wrapper">
+        <button class="pipeline-node-pill active" data-scheme="all">
+          All Curriculum Schemes
+          <span class="node-count-badge">16</span>
+        </button>
+        <button class="pipeline-node-pill" data-scheme="autonomous">
+          Autonomous Scheme (AMC)
+          <span class="node-count-badge">3</span>
+        </button>
+        <button class="pipeline-node-pill" data-scheme="vtu">
+          VTU Scheme (Affiliated)
+          <span class="node-count-badge">11</span>
+        </button>
+        <button class="pipeline-node-pill" data-scheme="external">
+          External Academic Tools
+          <span class="node-count-badge">6</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Search & Dynamic Filter Panel -->
+    <section class="controls-panel" id="search-section" aria-label="Resource Discovery">
+      <div class="search-input-wrapper">
+        <span class="search-icon" aria-hidden="true">🔍</span>
+        <input type="text" 
+               id="search-resources-input" 
+               class="search-input" 
+               placeholder="Search by subject, topic, cycle, semester, or keyword (e.g., 'C Cycle', '3rd Sem', 'AI', 'Algorithms')..." 
+               aria-label="Search academic study materials">
+      </div>
+
+      <div class="filters-row">
+        <!-- Semester Filter Pills -->
+        <div class="filter-row-group">
+          <span class="filter-label">Semester:</span>
+          <div id="semester-filters-container" class="filter-pills-track">
+            <!-- Dynamic semester filters injected by app.js -->
+          </div>
+        </div>
+
+        <!-- Category Filter Pills -->
+        <div class="filter-row-group">
+          <span class="filter-label">Category:</span>
+          <div id="category-filters-container" class="filter-pills-track">
+            <!-- Dynamic category filters injected by app.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         PRIORITY 1: OFFICIAL CLUB GOOGLE DRIVE RESOURCES (PRIMARY SECTION)
+         ===================================================================== -->
+    <section class="resource-block" id="official-drive-section" aria-labelledby="drive-section-title">
+      <div class="section-header-block">
+        <p class="section-eyebrow">Priority 1 • Core Academic Archives</p>
+        <h2 class="section-heading-serif" id="drive-section-title">
+          Official Club Google Drive Folders <span id="drive-count">(10)</span>
+        </h2>
+        <p class="section-description-mono">
+          Authoritative study materials maintained by NEURON NET for Autonomous and VTU cycles. Click any folder card to view or download course materials directly on Google Drive.
+        </p>
+      </div>
+
+      <div class="resource-cards-grid" id="drive-resources-grid">
+        <!-- Injected via app.js -->
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         PRIORITY 2: EXTERNAL ACADEMIC RESOURCES (SECONDARY SECTION)
+         ===================================================================== -->
+    <section class="resource-block" id="external-section" aria-labelledby="external-section-title">
+      <div class="section-header-block">
+        <p class="section-eyebrow">Priority 2 • Reference Utilities &amp; Portals</p>
+        <h2 class="section-heading-serif" id="external-section-title">
+          External Academic Resources &amp; Syllabus <span id="external-count">(6)</span>
+        </h2>
+        <p class="section-description-mono">
+          Supplementary external academic references, university syllabus copies, previous-year question papers, and calculation tools provided via VTU Circle.
+        </p>
+      </div>
+
+      <div class="resource-cards-grid" id="external-resources-grid">
+        <!-- Injected via app.js -->
+      </div>
+    </section>
+
+    <!-- FAQ Accordion Section -->
+    <section class="faq-section" id="faq-section" aria-labelledby="faq-section-title">
+      <div class="section-header-block">
+        <p class="section-eyebrow">Frequently Answered Queries</p>
+        <h2 class="section-heading-serif" id="faq-section-title">Academic &amp; Access Policies</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-accordion-item">
+          <div class="faq-question-row">
+            <h3 class="faq-question">Why does a Google Drive folder ask for permissions?</h3>
+            <span class="faq-chevron" aria-hidden="true">↓</span>
+          </div>
+          <p class="faq-answer">
+            Access to official club folders is governed directly by Google Drive permissions configured by the folder owner and department administrators. If you see an access request screen, please log in with your institutional student email account (or email the club coordinator to request viewing access).
+          </p>
+        </div>
+
+        <div class="faq-accordion-item">
+          <div class="faq-question-row">
+            <h3 class="faq-question">What is the difference between Autonomous and VTU Scheme folders?</h3>
+            <span class="faq-chevron" aria-hidden="true">↓</span>
+          </div>
+          <p class="faq-answer">
+            AMC Engineering College operates as an Autonomous Institution for recent batches, featuring specialized internal curricula and exam structures. Earlier batches or specific programs adhere to the Visvesvaraya Technological University (VTU) curriculum. Choose your respective scheme using the selector above.
+          </p>
+        </div>
+
+        <div class="faq-accordion-item">
+          <div class="faq-question-row">
+            <h3 class="faq-question">How can students contribute verified notes and previous question papers?</h3>
+            <span class="faq-chevron" aria-hidden="true">↓</span>
+          </div>
+          <p class="faq-answer">
+            The NEURON NET Academic Club regularly collects handwritten toppers' notes, faculty revision materials, and exam question papers. Please contact your student class representative or reach out directly to the NEURON NET club coordinators.
+          </p>
+        </div>
+
+        <div class="faq-accordion-item">
+          <div class="faq-question-row">
+            <h3 class="faq-question">Is VTU Circle affiliated with AMC Engineering College?</h3>
+            <span class="faq-chevron" aria-hidden="true">↓</span>
+          </div>
+          <p class="faq-answer">
+            No. VTU Circle is an independent third-party educational reference portal providing publicly available VTU syllabus copies, question papers, and GPA calculators. It is provided here strictly for convenience and is not endorsed by or affiliated with AMC Engineering College.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Editorial Footer with Three Original Logos & Accreditation -->
+  <footer class="site-footer">
+    <div class="content-wrapper">
+      <div class="footer-top-grid">
+        
+        <!-- Left: Logos and Identification -->
+        <div>
+          <div class="footer-logos-strip">
+            <img src="/assets/logos/amc-college-logo.jpg" alt="AMC Engineering College" height="40">
+            <img src="/assets/logos/cse-aiml-dept-logo.jpg" alt="Dept of CSE AIML" height="40">
+            <img src="/assets/logos/neuron-net-club-logo.jpg" alt="NEURON NET Academic Club" height="40">
+          </div>
+          <p class="footer-tagline">
+            <strong>NEURON NET — Academic Club</strong><br>
+            Department of Computer Science &amp; Engineering (Artificial Intelligence &amp; Machine Learning)<br>
+            AMC Engineering College, Bengaluru • Autonomous Institution<br>
+            Accreditation: NAAC A+ | NBA Accredited
+          </p>
+        </div>
+
+        <!-- Middle: Direct Semester Shortcuts -->
+        <div>
+          <h4 class="footer-col-title">Autonomous Repositories</h4>
+          <ul class="footer-links-list">
+            <li><a href="https://drive.google.com/drive/folders/1DKPhWVLe8I7o_SbA2QeJ5pA3c0zOM7e?usp=sharing" target="_blank" rel="noopener noreferrer" class="footer-link">C Cycle (Autonomous) ↗</a></li>
+            <li><a href="https://drive.google.com/drive/folders/1JHo8uPNaLhsA0UkckpxyCUEqUyVHQNne?usp=sharing" target="_blank" rel="noopener noreferrer" class="footer-link">P Cycle (Autonomous) ↗</a></li>
+            <li><a href="https://drive.google.com/drive/folders/12EzrbLaV5KSqzZLkaK_BDmwJI6oWx1ZT?usp=sharing" target="_blank" rel="noopener noreferrer" class="footer-link">3rd Semester (Autonomous) ↗</a></li>
+          </ul>
+        </div>
+
+        <!-- Right: VTU Scheme & Calculators -->
+        <div>
+          <h4 class="footer-col-title">External Academic Utilities</h4>
+          <ul class="footer-links-list">
+            <li><a href="https://vtucircle.com/vtu-syllabus/" target="_blank" rel="noopener noreferrer" class="footer-link">VTU University Syllabus ↗</a></li>
+            <li><a href="https://vtucircle.com/vtu-question-paper/" target="_blank" rel="noopener noreferrer" class="footer-link">Previous-Year Question Papers ↗</a></li>
+            <li><a href="https://vtucircle.com/vtu-sgpa-calculator/" target="_blank" rel="noopener noreferrer" class="footer-link">Online SGPA Calculator ↗</a></li>
+            <li><a href="https://vtucircle.com/vtu-cgpa-calculator/" target="_blank" rel="noopener noreferrer" class="footer-link">Online CGPA Calculator ↗</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-bar">
+        <span>© 2026 NEURON NET Academic Club • Department of CSE (AI &amp; ML), AMC Engineering College. All rights reserved.</span>
+        <div class="api-status-indicator">
+          <span class="status-dot" id="api-status-dot"></span>
+          <span id="api-status-text">Verifying API connection...</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
