@@ -863,15 +863,17 @@ body {
   color: var(--color-lake-blue);
   border: 1px solid #c3d7f9;
   border-radius: var(--radius-tag);
-  padding: 4px 12px;
+  padding: 3.5px 10px;
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 10.5px;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
-  font-weight: 500;
+  letter-spacing: 0.3px;
+  font-weight: 600;
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 5px;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .card-badge-external {
@@ -879,19 +881,24 @@ body {
   color: var(--color-graphite);
   border: 1px solid var(--color-ash);
   border-radius: var(--radius-tag);
-  padding: 4px 12px;
+  padding: 3.5px 10px;
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 10.5px;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
-  font-weight: 500;
+  letter-spacing: 0.3px;
+  font-weight: 600;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .card-scheme-pill {
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 10.5px;
   text-transform: uppercase;
+  letter-spacing: 0.3px;
   color: var(--color-smoke);
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .card-title {
@@ -1018,6 +1025,129 @@ body {
 
 .faq-accordion-item.open .faq-answer {
   display: block;
+}
+
+/* ==========================================================================
+   CLUB LEADERSHIP & PRESIDENTS SECTION
+   ========================================================================== */
+.leadership-section {
+  margin-bottom: var(--spacing-72);
+  width: 100%;
+}
+
+.leadership-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-24);
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+.leader-card {
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: var(--radius-card);
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.leader-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  border-color: rgba(26, 76, 210, 0.35);
+}
+
+.leader-card-img-wrap {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: var(--radius-subcard);
+  overflow: hidden;
+  background-color: #ede9e1;
+  margin-bottom: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.leader-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.leader-img-shreyas {
+  object-position: center 20%;
+}
+
+.leader-img-gaurav {
+  object-position: center top;
+}
+
+.leader-img-bhuvan {
+  object-position: center center;
+}
+
+.leader-card:hover .leader-card-img {
+  transform: scale(1.04);
+}
+
+.leader-card-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.leader-badge-wrap {
+  margin-bottom: 10px;
+}
+
+.leader-role-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: var(--radius-tag);
+}
+
+.badge-president {
+  background-color: var(--color-lake-blue);
+  color: #ffffff;
+}
+
+.badge-vice-president {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.leader-name {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  color: #000000;
+  margin: 0 0 6px 0;
+  line-height: 1.25;
+}
+
+.leader-subtext {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: #374151;
+  line-height: 1.45;
+  margin: 0;
+  font-weight: 500;
 }
 
 /* ==========================================================================
@@ -1399,6 +1529,20 @@ body {
     gap: 6px;
   }
 
+  .card-badge-drive,
+  .card-badge-external {
+    font-size: 10px;
+    padding: 3px 8px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .card-scheme-pill {
+    font-size: 10px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
   .card-title {
     font-size: 18px;
     line-height: 1.25;
@@ -1415,6 +1559,22 @@ body {
     justify-content: center;
     padding: 11px 16px;
     font-size: 12px;
+  }
+
+  /* Leadership on Mobile */
+  .leadership-section {
+    margin-bottom: var(--spacing-48);
+  }
+
+  .leadership-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .leader-name {
+    font-size: 20px;
   }
 
   /* Footer on Mobile */
