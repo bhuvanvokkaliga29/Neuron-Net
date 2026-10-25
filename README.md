@@ -35,14 +35,14 @@ The platform organizes 16 verified academic resources into two clear priorities:
 
 ### Priority 1: Official Club Google Drive Resources (10 Repositories)
 #### Autonomous Scheme
-1. **C Cycle (Autonomous)**: `https://drive.google.com/drive/folders/1DKPhWVLe8I7o_SbA2QeJ5pA3c0zOM7e?usp=sharing`
+1. **C Cycle (Autonomous)**: `https://drive.google.com/drive/folders/1DKPh-WVLe8I7o_SbA2QeJ5pA3c0zOM7e?usp=sharing`
 2. **P Cycle (Autonomous)**: `https://drive.google.com/drive/folders/1JHo8uPNaLhsA0UkckpxyCUEqUyVHQNne?usp=sharing`
 3. **3rd Semester (Autonomous)**: `https://drive.google.com/drive/folders/12EzrbLaV5KSqzZLkaK_BDmwJI6oWx1ZT?usp=sharing`
 
 #### VTU Scheme
 4. **C Cycle (VTU)**: `https://drive.google.com/drive/folders/1S9d5e4j8_8FgRng6CspTZ05jNJoiXso7?usp=sharing`
 5. **P Cycle (VTU)**: `https://drive.google.com/drive/folders/1FciRg9oqHptrkeNpJefZZ-nsmJLVn5nn?usp=sharing`
-6. **3rd Semester (VTU)**: `https://drive.google.com/drive/folders/1ChizQVDfIYL6qVlBDLge45ClAMGAQBx?usp=sharing`
+6. **3rd Semester (VTU)**: `https://drive.google.com/drive/folders/1ChizQVDfIYL6qVlBDLge45ClAM-GAQBx?usp=sharing`
 7. **4th Semester (VTU)**: `https://drive.google.com/drive/folders/1trUoWQUW4XoX_oXt4X5pZ0q9loEPzVYF?usp=sharing`
 8. **5th Semester (VTU)**: `https://drive.google.com/drive/folders/17ZZS_w1oVSm5Bz3yGDyYT_U6oegbHE05?usp=sharing`
 9. **6th Semester (VTU)**: `https://drive.google.com/drive/folders/1bEB2JrfuDoH3YiUvZn7tx9zHgrNSi-ca?usp=sharing`

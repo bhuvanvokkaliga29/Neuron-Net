@@ -30,6 +30,8 @@ export class ResourceController {
         },
       };
 
+      res.setHeader('Cache-Control', 'public, max-age=60, s-maxage=300, stale-while-revalidate=86400');
+      res.setHeader('Vary', 'Accept-Encoding');
       res.status(200).json(response);
     } catch (error) {
       res.status(500).json({
@@ -71,6 +73,8 @@ export class ResourceController {
         return;
       }
 
+      res.setHeader('Cache-Control', 'public, max-age=60, s-maxage=300, stale-while-revalidate=86400');
+      res.setHeader('Vary', 'Accept-Encoding');
       res.status(200).json({
         success: true,
         data: resource,
@@ -89,6 +93,8 @@ export class ResourceController {
 
   public static async getCategories(_req: Request, res: Response): Promise<void> {
     try {
+      res.setHeader('Cache-Control', 'public, max-age=60, s-maxage=300, stale-while-revalidate=86400');
+      res.setHeader('Vary', 'Accept-Encoding');
       res.status(200).json({
         success: true,
         data: RESOURCE_CATEGORIES,
@@ -108,6 +114,8 @@ export class ResourceController {
   public static async getStructure(_req: Request, res: Response): Promise<void> {
     try {
       const structure = getAcademicStructure();
+      res.setHeader('Cache-Control', 'public, max-age=60, s-maxage=300, stale-while-revalidate=86400');
+      res.setHeader('Vary', 'Accept-Encoding');
       res.status(200).json({
         success: true,
         data: structure,

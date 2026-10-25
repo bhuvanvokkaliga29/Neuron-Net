@@ -6,6 +6,7 @@ import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
 import { apiRouter } from './routes/api.routes.js';
 import { errorHandler, notFoundHandler } from './middleware/errorHandler.middleware.js';
+import { createRateLimiter } from './middleware/rateLimiter.middleware.js';
 
 dotenv.config();
 
@@ -16,6 +17,9 @@ const publicDir = path.join(projectRoot, 'public');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+// Trust reverse proxy (Vercel Edge Network / AWS ALB)
+app.set('trust proxy', 1);
 
 // Security Middleware
 app.use(
@@ -31,6 +35,7 @@ app.use(
       },
     },
     crossOriginEmbedderPolicy: false,
+    crossOriginResourcePolicy: { policy: 'cross-origin' },
   })
 );
 
@@ -38,8 +43,21 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Serve static frontend and assets
-app.use(express.static(publicDir));
+// Rate Limiter: 300 requests / minute per IP (guards against bot flood while allowing NAT campus WiFi)
+const apiLimiter = createRateLimiter({
+  windowMs: 60 * 1000,
+  maxRequests: 300,
+  message: 'High traffic detected. Please wait a few seconds and refresh.',
+});
+app.use('/api', apiLimiter);
+
+// Serve static frontend and assets with standard caching headers
+app.use(
+  express.static(publicDir, {
+    maxAge: '1d',
+    etag: true,
+  })
+);
 
 // Mount REST API
 app.use('/api', apiRouter);

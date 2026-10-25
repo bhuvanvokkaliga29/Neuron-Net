@@ -46,13 +46,13 @@ describe('NEURON NET Academic Platform Verification Suite', () => {
   describe('Authoritative URL Verification', () => {
     const EXPECTED_URLS = {
       // Autonomous
-      'res-auto-c-cycle': 'https://drive.google.com/drive/folders/1DKPhWVLe8I7o_SbA2QeJ5pA3c0zOM7e?usp=sharing',
+      'res-auto-c-cycle': 'https://drive.google.com/drive/folders/1DKPh-WVLe8I7o_SbA2QeJ5pA3c0zOM7e?usp=sharing',
       'res-auto-p-cycle': 'https://drive.google.com/drive/folders/1JHo8uPNaLhsA0UkckpxyCUEqUyVHQNne?usp=sharing',
       'res-auto-3rd-sem': 'https://drive.google.com/drive/folders/12EzrbLaV5KSqzZLkaK_BDmwJI6oWx1ZT?usp=sharing',
       // VTU
       'res-vtu-c-cycle': 'https://drive.google.com/drive/folders/1S9d5e4j8_8FgRng6CspTZ05jNJoiXso7?usp=sharing',
       'res-vtu-p-cycle': 'https://drive.google.com/drive/folders/1FciRg9oqHptrkeNpJefZZ-nsmJLVn5nn?usp=sharing',
-      'res-vtu-3rd-sem': 'https://drive.google.com/drive/folders/1ChizQVDfIYL6qVlBDLge45ClAMGAQBx?usp=sharing',
+      'res-vtu-3rd-sem': 'https://drive.google.com/drive/folders/1ChizQVDfIYL6qVlBDLge45ClAM-GAQBx?usp=sharing',
       'res-vtu-4th-sem': 'https://drive.google.com/drive/folders/1trUoWQUW4XoX_oXt4X5pZ0q9loEPzVYF?usp=sharing',
       'res-vtu-5th-sem': 'https://drive.google.com/drive/folders/17ZZS_w1oVSm5Bz3yGDyYT_U6oegbHE05?usp=sharing',
       'res-vtu-6th-sem': 'https://drive.google.com/drive/folders/1bEB2JrfuDoH3YiUvZn7tx9zHgrNSi-ca?usp=sharing',
